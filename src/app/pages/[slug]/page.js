@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { getPostOrPageBySlug } from '../../../lib/api';
 import Link from 'next/link';
+import { FaArrowLeft } from 'react-icons/fa';
 
 export default function PageDetail() {
   const params = useParams();
@@ -53,7 +54,7 @@ export default function PageDetail() {
 
   return (
     <div className="container mt-5">
-      <Link href="/pages" className="btn btn-secondary mb-3">← Back to Pages</Link>
+      <Link href="/pages" className="btn btn-secondary mb-3"><FaArrowLeft /> Back to Pages</Link>
 
       <div className="card shadow p-4">
         <h2 className="text-primary">{page?.title?.rendered}</h2>

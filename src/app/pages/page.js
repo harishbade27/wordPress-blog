@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { getPages } from '../../lib/api';
 import { motion } from 'framer-motion';
+import { FaArrowLeft } from 'react-icons/fa';
 
 export default function PagesPage() {
     const [pages, setPages] = useState([]);
@@ -50,7 +51,7 @@ export default function PagesPage() {
         >
             <div className="mb-4">
                 <button onClick={() => router.push('/')} className="btn btn-secondary">
-                    ← Back
+                    <FaArrowLeft /> Back
                 </button>
             </div>
 

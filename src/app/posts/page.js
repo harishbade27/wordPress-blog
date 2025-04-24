@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { getPosts } from '../../lib/api';
 import { motion } from 'framer-motion';
+import { FaArrowLeft } from 'react-icons/fa';
 
 export default function PostsPage() {
   const [posts, setPosts] = useState([]);
@@ -50,7 +51,7 @@ export default function PostsPage() {
     >
       <div className="mb-4">
         <button onClick={() => router.push('/')} className="btn btn-secondary">
-          ← Back
+          <FaArrowLeft /> Back
         </button>
       </div>
 
