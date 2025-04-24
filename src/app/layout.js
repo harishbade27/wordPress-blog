@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const metadata = {
-  title: 'WordPress + Next.js',
-  description: 'Display WordPress posts and pages',
+  title: 'WordPress Blog',
+  ription: 'Display WordPress posts and pages',
 };
 
 export default function RootLayout({ children }) {
